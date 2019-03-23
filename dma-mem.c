@@ -1,5 +1,23 @@
 /* share/avr/xmega/dma-mem/dma-mem.c */
 
+/*
+ Copyright (C) 2010 Potrepalov I.S.  potrepalov@list.ru
+
+    This library is free software; you can redistribute it and/or
+    modify it under the terms of the GNU Lesser General Public
+    License as published by the Free Software Foundation; either
+    version 2 of the License, or (at your option) any later version.
+
+    This library is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+    Lesser General Public License for more details.
+
+    You should have received a copy of the GNU Lesser General Public
+    License along with this library; if not, write to the Free Software
+    Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+*/
+
 
 #include "dma-mem.h"
 
@@ -11,7 +29,7 @@ DMA_memcpy_bg(
 	unsigned short len )
 {
 	// Копирует блок памяти с помощью DMA (канал 3)
-	// одновременно с исполненим кода.
+	// одновременно с исполнением кода.
 	// Для получения выигрыша от использования данной функции,
 	// значение len должно быть достаточно большим.
 	// dst -- адрес куда копировать
